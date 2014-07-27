@@ -7,7 +7,7 @@ spl_autoload_register(function ($class) {
 use Database as DB;
 
 try {
-    $db = new DB\MySQL('cvdb', 'localhost', 'root', 'RealHunter06');
+    $db = new DB\MySQL('cvdb', 'localhost', 'root', 'root');
 } catch (Exception $e) {
     echo "Connection failed, exiting.";
     exit;
@@ -69,7 +69,7 @@ $job2->jobname                      = 'Programozó';
 $job2->start_date                   = '2009-09-01';
 $job2->end_date                     = '2013-01-01';
 $job2->description                  =  'Egyedi Linux alapú operációs rendszer fejlesztése beépített hálózati eszközökre. ';
-$job2->description                 .=  'Az operációs rendszerhez kellő software -ek telepítése és integrálása. ';
+$job2->description                 .=  'Az operációs rendszerhez szükséges software -ek telepítése és integrálása. ';
 $job2->description                 .= 'ANSI C, Bash, Perl fejlesztés, virtulizációs technikák, hálózati management, szerveralkalmazások.';
 
 $job3->company_name                 = 'Ideasol Magyarország Kft.';
@@ -144,6 +144,7 @@ $extra1->name =         'Kommunikációs készségek';
 $extra1->description =  'Jó kommunikációs készség, mint az ügyfelekkel, mint a kollégákkal.';
 $extra1->description .= 'Képes vagyok az ügyfelekkel telefonon, emailben tárgyalni, illetve személyes tárgyaláson is voltam már.';
 $extra1->description .= 'A kollégákkal személyes megbeszélések, ötletelések, új információk megosztása, oktatása gyakori feladatom.';
+$extra1->description .= 'A szakmai angolt megértem, tudok dokumentációt olvasni, akár írni is.';
 $extra1->isModified = true; $extra1->isNew = true;
 
 $extra2 = new CV\ExtraStruct();
