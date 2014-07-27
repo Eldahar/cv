@@ -1,4 +1,5 @@
-cv
-==
-
 My CV
+
+Magyar:
+
+English:
