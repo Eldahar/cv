@@ -88,7 +88,6 @@ $jobModel->save($job3);
 
 $experiences = array();
 $experience = new CV\ExperienceStruct();
-$experience->experience = ''; $experience->level = ''; $experiences[] = $experience;
 
 $experience = new CV\ExperienceStruct();
 $experience->experience = 'PHP5';                           $experience->level = 'Szakértő'; $experiences[] = $experience;
